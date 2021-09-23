@@ -34,4 +34,9 @@ public class Fornecedor extends Pessoa{
     public void setValorDivida(double valorDivida) {
         this.valorDivida = valorDivida;
     }
+
+    //Método obter saldo
+    public double obterSaldo(){
+        return valorCredito - valorDivida;
+    }
 }
