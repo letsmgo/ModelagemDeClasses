@@ -22,8 +22,6 @@ public class Pessoa {
     }
 
     //Getters and Setters
-
-
     public String getNome() {
         return nome;
     }
