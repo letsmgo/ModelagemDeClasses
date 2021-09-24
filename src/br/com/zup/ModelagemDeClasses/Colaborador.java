@@ -5,7 +5,7 @@ Considere, como outra subclasse da classe Pessoa, a classe Colaborador. Consider
 Colaborador tem, para além dos atributos que caracterizam a classe Pessoa, os atributos codigoSetor (inteiro),
 salarioBase (double) e imposto (double).
  */
-public class Colaborador extends Pessoa{
+public class Colaborador extends Pessoa {
     //Atributos
     private int codigoSetor;
     private double salarioBase;
@@ -46,7 +46,8 @@ public class Colaborador extends Pessoa{
     }
 
     //Método calcular salario
-    public double calcularSalario(){
-        return salarioBase - imposto;
+    public double calcularSalario() {
+        double salarioLiquido = salarioBase - imposto;
+        return salarioLiquido;
     }
 }
